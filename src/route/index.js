@@ -1,10 +1,10 @@
 import {withRouter} from 'react-router-dom'
-import Home from '../pages/Home'
+import Home from 'pages/Home'
 import Assign from '../pages/Assign'
 import Login from '../pages/Login'
 import ErrorPage from '../components/404'
 import User from '../pages/System/User'
-import RouterComponent from '../pages/System/Router'
+import RouterComponent from '../pages/System/RouterComponent'
 
 export const mainRouters = [
     {

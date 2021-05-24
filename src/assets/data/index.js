@@ -1,6 +1,51 @@
 export const routersData = [
     {
+        value:'1',
         path:'/admin/system',
-        component:''
-    }
+        title:'系统管理',
+        icon:'assets/icons/svg/system.svg',
+        children:[
+            {
+                value:'1-1',
+                path:'/admin/system/router1',
+                title:'菜单管理',
+                component:'pages/System/RouterComponent/index.jsx',
+                icon:'assets/icons/svg/component.svg'
+            },
+            {   value:'1-2',
+                path:'/admin/system/user1',
+                title:'用户管理',
+                component:'pages/System/User/index.jsx',
+                icon:'assets/icons/svg/client.svg'
+            }
+        ]
+    },
+    {
+        value:'2',
+        path:'/admin/data',
+        icon:'',
+        title:'数据中心',
+        children:[]
+    },
+    {
+        value:'3',
+        path:'/admin/order',
+        icon:'',
+        title:'订单中心',
+        children:[]
+    },
+    {
+        value:'4',
+        path:'/admin/client',
+        icon:'',
+        title:'客户中心',
+        children:[]
+    },
+    {
+        value:'5',
+        path:'/admin/',
+        icon:'',
+        title:'客户中心',
+        children:[]
+    },
 ]

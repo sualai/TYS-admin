@@ -1,10 +1,17 @@
 html,body,#root,.ant-layout{
     width: 100%;
     height: 100%;
+    max-height: 100vh;
+    overflow:auto;
 }
 .logo {
     margin:0 auto;
     text-align: center;
+    color:#fff;
+}
+.logo img{
+  margin-right: 5px;
+  
 }
 #components-layout-demo-custom-trigger .trigger {
     padding: 0 24px;
@@ -31,4 +38,59 @@ html,body,#root,.ant-layout{
     font-size: 24px;
     padding: 0 10px;
 }
+.ant-modal {
+  width:800px !important;
+}
+.ml5{
+  margin-left: 5px;
+}
+.mt5{
+  margin-top: 5px;
+}
+.mr5{
+  margin-right: 5px;
+}
+.mb5{
+  margin-bottom: 5px;
+}
+.ml10{
+  margin-left: 10px;
+}
+.mt10{
+  margin-top: 10px;
+}
+.mr10{
+  margin-right: 10px;
+}
+.mb15{
+  margin-bottom: 15px;
+}
 
+.ml15{
+  margin-left: 15px;
+}
+.mt15{
+  margin-top: 15px;
+}
+.mr15{
+  margin-right: 15px;
+}
+.mb15{
+  margin-bottom: 15px;
+}
+.ml20{
+  margin-left: 20px;
+}
+.mt20{
+  margin-top: 20px;
+}
+.mr20{
+  margin-right: 20px;
+}
+.mb20{
+  margin-bottom: 20px;
+}
+
+.text-center {
+  text-align: center;
+}

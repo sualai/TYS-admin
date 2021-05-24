@@ -4,16 +4,20 @@ import App from './App';
 import {baseRouter} from './route'
 import {Switch,Route,Redirect} from "react-router-dom"
 import {BrowserRouter} from "react-router-dom"
+import zhCN from 'antd/lib/locale/zh_CN';
+// import "./assets/icons"
+import  {ConfigProvider } from 'antd'
 ReactDOM.render(
+  <ConfigProvider locale={zhCN}>
   <BrowserRouter>
     <Switch>
       <Route path="/admin" render={routeProps=><App {...routeProps} />} />
       {baseRouter.map(item=>(
         <Route key={item.path} {...item} />  
       ))}
-      <Redirect to="/404" />
+      <Redirect to="/login" />
     </Switch>
-  </BrowserRouter>,
+  </BrowserRouter>
+  </ConfigProvider>,
   document.getElementById('root')
 );
-
